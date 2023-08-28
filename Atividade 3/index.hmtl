@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Luan Diemer">
+<meta name="description" content="Criptomoedas e Blockchain explicado">
+<meta name="keywords" content="sitesm web, tags, html">
+<title>O que é Blockchain e Criptomoeda?</title>
+</head>
+<body background="amareloooo.png" text="" link="" vlink="" alink="">
+
+<header>
+<h1 id="titulo1"><center>O que é Blockchain e Criptomoeda?</center></h1>
+
+<br>
+<h2><center>O blockchain e as criptomoedas representam uma das transformações mais impactantes da era digital. Embora inicialmente associados,
+esses dois conceitos agora trilham caminhos distintos, conquistando espaços diversos e prometendo revolucionar setores tão amplos
+quanto a economia, a tecnologia e até mesmo a própria forma como entendemos a confiança e a segurança na era digital. Neste texto,
+exploraremos a essência do blockchain e das criptomoedas, bem como suas aplicações e o que o futuro pode reservar para essas
+inovações.</center></h2>
+
+<h3>Índice</h1>
+<br>
+<nav>
+<ul>
+<li><a href="titulo2">Fundação do Blockchain</a></li>
+<li><a href="titulo3">Conceito de Criptomoeda</a></li>
+<li><a href="titulo4">Conclusão</a></li>
+</ul>
+</nav>
+</header>
+
+<section>
+<h4 id="titulo2">Blockchain: A Fundação da Confiança Digital</h4>
+<p><i>Transparência e Descentralização</i></p>
+<p>O <strong>blockchain</strong> é uma tecnologia que oferece uma maneira de registrar transações de forma transparente, segura e descentralizada.
+O sistema funciona por meio de uma série de blocos interconectados, cada um contendo informações sobre transações, registros ou
+contratos. Cada bloco é vinculado ao anterior, formando uma cadeia que é imutável e resistente a alterações fraudulentas.
+Consensos e Segurança.
+
+A construção do blockchain envolve o consenso distribuído, onde vários participantes da rede validam e aprovam uma transação antes
+que ela seja adicionada ao bloco. Isso reduz significativamente a possibilidade de fraudes e falsificações, pois a maioria dos
+participantes deve concordar sobre a validade da transação. A criptografia também é uma característica crucial do blockchain,
+garantindo a segurança das informações e a privacidade dos usuários</p>
+</section>
+
+<section>
+<h5 id="titulo3">Criptomoedas: A Moeda do Futuro?</h5>
+<p><i>O Conceito de Criptomoedas</i></p>
+<p>As criptomoedas, lideradas pelo pioneiro Bitcoin, são moedas digitais baseadas em tecnologia blockchain. Elas operam de
+maneira descentralizada, permitindo transferências de valor diretas entre participantes, sem a necessidade de intermediários
+financeiros. As criptomoedas oferecem vantagens como transações rápidas e globais, taxas reduzidas e uma certa dose de
+anonimato. Desafios e Aplicações. Enquanto as criptomoedas estão em constante crescimento, também enfrentam desafios como a
+volatilidade do valor, regulamentações governamentais e preocupações sobre seu uso em atividades ilegais. No entanto, elas
+encontram aplicação em diversos setores, desde remessas internacionais até micropagamentos online e até mesmo como uma forma
+de investimento.</p>
+</section>
+
+<h6 id="titulo4">Conclusão</h6>
+<p>O blockchain e as criptomoedas têm impactado nossa sociedade de maneira profunda e duradoura. A tecnologia
+blockchain, com sua capacidade de garantir a integridade das transações e estabelecer confiança digital, tem o potencial de
+revolucionar indústrias que vão desde o financeiro até o de gerenciamento de cadeia de suprimentos. As criptomoedas, por sua
+vez, abrem novas possibilidades para transferências financeiras globais e eficientes, embora enfrentem desafios significativos
+em seu caminho para adoção em massa. À medida que a tecnologia blockchain continua a evoluir e a encontrar aplicações em
+diversos setores, e as criptomoedas seguem desafiando os paradigmas do sistema financeiro tradicional, é certo que essas
+inovações continuarão a moldar o futuro da economia digital e da confiança online. Seja qual for o destino final, o
+blockchain e as criptomoedas deixaram sua marca indelével na história da tecnologia e da sociedade contemporânea.</p>
+
+<section>
+<h7 id="ref"> Referências  </h7>
+<p> GREVE, Fabíola Greve et al. Blockchain e a Revolução do Consenso sob Demanda. Simpósio Brasileiro de Redes de Computadores e
+Sistemas Distribuídos (SBRC)-Minicursos, 2018.
+
+FERREIRA, Juliandson Estanislau; PINTO, Filipe Gutemberg Costa; DOS SANTOS, Simone Cristiane. Estudo de mapeamento sistemático
+sobre as tendências e desafios do Blockchain. Gestao. org, v. 15, n. 6, p. 108-117, 2017.
+MOURA, Luzia Menegotto Frick de; BRAUNER, Daniela Francisco; JANISSEK-MUNIZ, Raquel. Blockchain e a Perspectiva Tecnológica
+para a Administração Pública: uma revisão sistemática. Revista de Administração Contemporânea, v. 24, p. 259-274, 2020.
+CHICARINO, Vanessa RL et al. Uso de blockchain para privacidade e segurança em internet das coisas. Sociedade Brasileira de
+Computação, 2017.</p>
+</section>
+</body>
+
+</html>
