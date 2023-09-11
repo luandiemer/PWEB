@@ -1,0 +1,127 @@
+div{
+    font-family: Arial;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+}
+@media (min-width: 0px) and (max-width: 420px) {
+    div {
+        background-color: rgb(67, 78, 78);
+    }
+ 
+    h1::after {
+ 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 52vh;
+        content: "Cinza";
+    }
+}
+ 
+@media (min-width: 421px) and (max-width: 768px) {
+    div {
+        background-color:rgb(226, 157, 30);
+    }
+ 
+    h1::after {
+
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 52vh;
+        content: "Laranja";
+    }
+}
+ 
+@media (min-width: 769px) and (max-width: 1024px) {
+    div {
+        background-color:rgb(245, 48, 212);
+    }
+ 
+    h1::after {
+        
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    min-height: 52vh;
+        content: "Rosa";
+    }
+}
+ 
+@media (min-width: 1025px) and (max-width: 1080px) {
+    div{
+        background-color:rgb(253, 72, 66);
+    }
+ 
+    h1::after {
+        
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    min-height: 52vh;
+        content: "Vermelho";
+    }
+}
+ 
+@media (min-width: 1081px) and (max-width: 1366px) {
+    div{
+        background-color:rgb(174, 74, 255);
+    }
+ 
+    h1::after {
+        
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    min-height: 52vh;
+        content: "Roxo";
+    }
+}
+ 
+@media (min-width: 1367px) and (max-width: 1920px) {
+    div {
+        background-color:rgb(255, 242, 67);
+    }
+ 
+    h1::after {
+        
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 52vh;
+        content: "Amarelo";
+    }
+}
+
+
+@media (min-width: 1921px) {
+    div {
+        background-color:rgb(126, 70, 6);
+    }
+    h1::after {
+        
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 52vh;
+        content: "Marrom";
+    }
+
+}
