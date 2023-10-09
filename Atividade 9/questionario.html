@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Questionário de Filme</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        form {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="number"], select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        h2 {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Questionário de Filme</h1>
+    <form id="questionnaireForm">
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" required><br>
+
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" required>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+        </select><br>
+
+        <label for="opiniao">Opinião:</label>
+        <select id="opiniao" required>
+            <option value="4">Ótimo</option>
+            <option value="3">Bom</option>
+            <option value="2">Regular</option>
+            <option value="1">Péssimo</option>
+        </select><br>
+
+        <button type="button" onclick="adicionarResposta()">Enviar</button>
+    </form>
+
+    <h2>Estatísticas:</h2>
+    <p>Média de Idade: <span id="mediaIdade"></span></p>
+    <p>Pessoa Mais Velha: <span id="maisVelha"></span></p>
+    <p>Pessoa Mais Nova: <span id="maisNova"></span></p>
+    <p>Pessoas que responderam Péssimo: <span id="pessimo"></span></p>
+    <p>Porcentagem de Ótimo e Bom: <span id="otimoBom"></span>%</p>
+    <p>Número de Mulheres: <span id="mulheres"></span></p>
+    <p>Número de Homens: <span id="homens"></span></p>
+
+    <script>
+        let idades = [];
+        let opinioes = [];
+        let mulheres = 0;
+        let homens = 0;
+
+        function adicionarResposta() {
+            const idade = parseInt(document.getElementById("idade").value);
+            const sexo = document.getElementById("sexo").value;
+            const opiniao = parseInt(document.getElementById("opiniao").value);
+
+            idades.push(idade);
+            opinioes.push(opiniao);
+
+            if (sexo === "feminino") {
+                mulheres++;
+            } else {
+                homens++;
+            }
+
+            calcularEstatisticas();
+        }
+
+        function calcularEstatisticas() {
+            const mediaIdade = idades.reduce((a, b) => a + b, 0) / idades.length;
+            document.getElementById("mediaIdade").textContent = mediaIdade.toFixed(2);
+
+            const idadeMaisVelha = Math.max(...idades);
+            document.getElementById("maisVelha").textContent = idadeMaisVelha;
+
+            const idadeMaisNova = Math.min(...idades);
+            document.getElementById("maisNova").textContent = idadeMaisNova;
+
+            const pessimoCount = opinioes.filter(opiniao => opiniao === 1).length;
+            document.getElementById("pessimo").textContent = pessimoCount;
+
+            const otimoBomCount = opinioes.filter(opiniao => opiniao === 4 || opiniao === 3).length;
+            const porcentagemOtimoBom = (otimoBomCount / opinioes.length) * 100;
+            document.getElementById("otimoBom").textContent = porcentagemOtimoBom.toFixed(2);
+
+            document.getElementById("mulheres").textContent = mulheres;
+            document.getElementById("homens").textContent = homens;
+        }
+    </script>
+</body>
+</html>
