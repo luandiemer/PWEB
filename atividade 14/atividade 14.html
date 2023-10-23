@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Transformação de Texto</title>
+</head>
+<body>
+  <h1>Transformação de Texto</h1>
+  <input type="text" id="texto">
+  <input type="checkbox" id="maiusculas" value="1">
+  <label for="maiusculas">Maiúsculas</label>
+  <input type="checkbox" id="minusculas" value="2">
+  <label for="minusculas">Minúsculas</label>
+
+  <script>
+    const texto = document.querySelector("#texto");
+    const maiusculas = document.querySelector("#maiusculas");
+    const minusculas = document.querySelector("#minusculas");
+
+    // Quando o checkbox "Maiúsculas" for marcado
+    maiusculas.addEventListener("change", () => {
+      texto.value = texto.value.toUpperCase();
+    });
+
+    // Quando o checkbox "Minúsculas" for marcado
+    minusculas.addEventListener("change", () => {
+      texto.value = texto.value.toLowerCase();
+    });
+  </script>
+</body>
+</html>
